@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Elly Escalada | Celestial Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="wish-loading">
+
+    <div class="sky-overlay"></div>
+    <div class="wish-flare"></div>
+
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#education"><span>Education</span></a></li>
+            <li><a href="#projects"><span>Projects</span></a></li>
+            <li><a href="#skills"><span>Skills</span></a></li>
+            <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="profile-header wish-appear">
+                <div class="profile-img-container">
+                    <img src="juswa.jpg" alt="Joshua Elly Escalada">
+                </div>
+                <h1>Joshua Elly Escalada</h1>
+                <p>Full-Stack Developer | Information Technology Student</p>
+                <div class="header-divider"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="education">
+            <h2 data-reveal="top">Education</h2>
+            <div class="education-timeline">
+                <div class="card edu-card" data-reveal="left">
+                    <div class="card-icon">AT</div>
+                    <div class="card-content">
+                        <h3>Ateneo de Davao University</h3>
+                        <p class="subtitle">B.S. Information Technology (Current)</p>
+                    </div>
+                </div>
+                <div class="card edu-card" data-reveal="right">
+                    <div class="card-icon">RS</div>
+                    <div class="card-content">
+                        <h3>ARMM Regional Science High School</h3>
+                        <p class="subtitle">Senior High School Graduate</p>
+                    </div>
+                </div>
+                <div class="card edu-card" data-reveal="left">
+                    <div class="card-icon">ND</div>
+                    <div class="card-content">
+                        <h3>Notre Dame of Sarmiento, INC.</h3>
+                        <p class="subtitle">Junior High School Graduate</p>
+                    </div>
+                </div>
+                <div class="card edu-card" data-reveal="right">
+                    <div class="card-icon">SC</div>
+                    <div class="card-content">
+                        <h3>Sarmiento Central Elementary School</h3>
+                        <p class="subtitle">Elementary School Graduate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 data-reveal="bottom">Projects</h2>
+            <div class="grid">
+                <div class="card project-card" data-reveal="bottom">
+                    <h3>Plus Ultra Calculator</h3>
+                    <p>A specialized React-based utility featuring a unique vertical layout and a built-in randomizer game.</p>
+                    <span class="tag">React Development</span>
+                </div>
+                <div class="card project-card" data-reveal="bottom">
+                    <h3>4-in-1 Feature Site</h3>
+                    <p>A multi-functional web platform featuring a Number Guesser and three additional interactive utilities built for seamless user engagement.</p>
+                    <a href="https://joshuaescalada.github.io/" target="_blank" class="project-link">Launch Site ◆</a>
+                </div>
+                <div class="card project-card" data-reveal="bottom">
+                    <h3>Illuminating the Community</h3>
+                    <p>Field implementation of a solar light installation project in Matina Pangi, Davao City (Nov 2025).</p>
+                    <span class="tag">Project Leadership</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 data-reveal="bottom">Skills</h2>
+            <div class="skills-grid" data-reveal="scale">
+                <div class="skill-card" data-tooltip="React"><i class="devicon-react-original colored"></i></div>
+                <div class="skill-card" data-tooltip="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
+                <div class="skill-card" data-tooltip="Java"><i class="devicon-java-plain colored"></i></div>
+                <div class="skill-card" data-tooltip="Python"><i class="devicon-python-plain colored"></i></div>
+                <div class="skill-card" data-tooltip="SQL"><i class="devicon-mysql-plain colored"></i></div>
+                <div class="skill-card" data-tooltip="Tailwind"><i class="devicon-tailwindcss-original colored"></i></div>
+                <div class="skill-card" data-tooltip="Linux"><i class="devicon-linux-plain colored"></i></div>
+                <div class="skill-card" data-tooltip="UI/UX"><i class="devicon-figma-plain colored"></i></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 data-reveal="bottom">Establish Connection</h2>
+            <div class="contact-grid">
+                <div class="card contact-card" data-reveal="left">
+                    <i class="fab fa-facebook-f contact-icon"></i>
+                    <h3>Facebook</h3>
+                    <p>Joshua Elly Escalada</p>
+                    <a href="https://www.facebook.com/je.escalada19" target="_blank" class="project-link">Message ◆</a>
+                </div>
+                <div class="card contact-card" data-reveal="right">
+                    <i class="far fa-envelope contact-icon"></i>
+                    <h3>Gmail</h3>
+                    <p id="email-text">jescalada@addu.edu.ph</p>
+                    <button onclick="copyEmail()" class="project-link" id="copy-btn">Copy Address ◆</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="motto" data-reveal="fade">AD ASTRA ABYSSOSQUE</p>
+        <p>&copy; 2026 Joshua Elly Escalada</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
