@@ -16,13 +16,19 @@
 }
 
 body {
-    background-color: #050709; /* Slightly deeper black for contrast */
+    background-color: #050709;
+    /* This creates three layers of stars at different sizes and opacities */
     background-image: 
         radial-gradient(circle at 50% 20%, rgba(59, 66, 85, 0.4) 0%, transparent 70%),
-        linear-gradient(to bottom, transparent 0%, var(--gi-bg) 100%),
-        url('https://www.transparenttextures.com/patterns/stardust.png');
+        radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 50px 160px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 130px 80px, #eee, rgba(0,0,0,0)),
+        linear-gradient(to bottom, transparent 0%, #0c0f12 100%);
+    background-repeat: repeat;
+    background-size: auto, 200px 200px, 150px 150px, 250px 250px, 100px 100px, 180px 180px, auto;
     background-attachment: fixed;
-    background-size: auto, auto, 400px; /* Keeps the stars small and crisp */
     color: var(--gi-gold);
     font-family: 'Quicksand', sans-serif;
     line-height: 1.9;
@@ -37,10 +43,12 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: -1;
-    /* This adds a soft vignette to the edges to hide "seams" */
-    background: radial-gradient(circle at center, transparent 0%, rgba(12, 15, 18, 0.8) 100%);
+    /* This adds the "nebula" purple/blue glow that sits behind your content */
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(70, 40, 120, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(40, 60, 100, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at center, transparent 0%, rgba(5, 7, 9, 0.8) 100%);
 }
-
 /* Ensure sections don't have conflicting backgrounds */
 section {
     padding: 200px 0;
